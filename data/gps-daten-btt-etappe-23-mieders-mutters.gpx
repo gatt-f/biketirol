@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="KOMPASS Digital Map" version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dklgpx="http://na.na.na/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<gpx xmlns="http://www.topografix.com/GPX/1/1" creator="KOMPASS Digital Map" version="1.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dklgpx="http://na.na.na/GPX/1/1"
+  xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
     <name>23 Mieders-Mutters</name>
     <desc>Kompass Digital Map Track</desc>
-    <bounds minlat="47.159697" minlon="11.331892" maxlat="47.227615" maxlon="11.391441"/>
+    <bounds minlat="47.159697" minlon="11.331892" maxlat="47.227615" maxlon="11.391441" />
   </metadata>
   <trk>
     <name>23 Mieders-Mutters</name>
