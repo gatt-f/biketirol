@@ -79,5 +79,6 @@ let gpxTrack = new L.GPX("../data/23.gpx", {
     marker_options: {
     startIconUrl: 'icons/start.png',
     endIconUrl: 'icons/finish.png',
+    shadowUrl: null,
     },
 }).addTo(overlays.gpx);
