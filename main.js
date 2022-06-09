@@ -80,5 +80,7 @@ let gpxTrack = new L.GPX("../data/23.gpx", {
     startIconUrl: 'icons/start.png',
     endIconUrl: 'icons/finish.png',
     shadowUrl: null,
+    iconSize: [32, 37],
+    iconAnchor: [16, 37],
     },
 }).addTo(overlays.gpx);
