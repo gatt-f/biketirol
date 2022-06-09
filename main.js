@@ -48,7 +48,6 @@ let map = L.map("map", {
     ],
 });
 
-
 // Layer control mit WMTS Hintergründen und Overlay
 let layerControl = L.control.layers({
     "eGrundkarte Tirol Sommer": startLayer,
@@ -91,5 +90,15 @@ let gpxTrack = new L.GPX("../data/23.gpx", {
 
 gpxTrack.on("loaded", function (evt) {
     // console.log("loaded gpx event: ", evt);
-    map.fitBounds(evt.target.getBounds());
+    let gpxLayer = evt.target;
+    map.fitBounds(gpxLayer.getBounds());
+    let popup = `<h3></h3>
+    <ul>
+    <li>Streckenlänge: ${gpxLayer.get_distance()} m</li>
+    <li>Tiefster Punkt: ${gpxLayer.get_elevation_min()} m</li>
+    <li>Höchster Punkt: ${gpxLayer.get_elevation_max()} m</li>
+    <li>Höhenmeter bergauf: ${gpxLayer.get_elevation_gain()} m</li>
+    <li>Höhenmeter bergab: ${gpxLayer.get_elevation_loss()} m</li>
+            `;
+    gpxLayer.bindPopup(popup);
 });
