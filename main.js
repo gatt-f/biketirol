@@ -90,7 +90,7 @@ let gpxTrack = new L.GPX("../data/23.gpx", {
 
 gpxTrack.on("loaded", function (evt) {
     // console.log("loaded gpx event: ", evt);
-    let gpxLayer = evt.target;
+    let gpxLayer = evt.target
     map.fitBounds(gpxLayer.getBounds());
     let popup = `<h3></h3>
     <ul>
