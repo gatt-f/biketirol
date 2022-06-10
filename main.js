@@ -94,11 +94,11 @@ gpxTrack.on("loaded", function (evt) {
     map.fitBounds(gpxLayer.getBounds());
     let popup = `<h3></h3>
     <ul>
-    <li>Streckenlänge: ${Math.round(gpxLayer.get_distance()/1000)} km</li>
+    <li>Streckenlänge: ${(gpxLayer.get_distance()/1000).toFixed()} km</li>
     <li>Tiefster Punkt: ${gpxLayer.get_elevation_min()} m</li>
     <li>Höchster Punkt: ${gpxLayer.get_elevation_max()} m</li>
-    <li>Höhenmeter bergauf: ${gpxLayer.get_elevation_gain().toFixed()} m</li>
-    <li>Höhenmeter bergab: ${gpxLayer.get_elevation_loss().toFixed()} m</li>
+    <li>Höhenmeter bergauf: ${(gpxLayer.get_elevation_gain()).toFixed()} m</li>
+    <li>Höhenmeter bergab: ${(gpxLayer.get_elevation_loss()).toFixed()} m</li>
             `;
     gpxLayer.bindPopup(popup);
 });
