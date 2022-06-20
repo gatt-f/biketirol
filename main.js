@@ -73,7 +73,7 @@ L.control.fullscreen().addTo(map);
 overlays.gpx.addTo(map);
 
 // GPX Track Layer implementieren
-let gpxTrack = new L.GPX("../data/23.gpx", {
+let gpxTrack = new L.GPX("../.data/23.gpx", {
     async: true,
     marker_options: {
         startIconUrl: 'icons/start.png',
@@ -110,5 +110,5 @@ let elevationControl = L.control.elevation({
     height: 200,
 }).addTo(map);
 gpxTrack.on("addline", function (evt) {
-elevationControl.addData(evt.line);
+    elevationControl.addData(evt.line);
 });
